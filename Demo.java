@@ -1,6 +1,6 @@
-class Demo{   // SI
+class Demo{   // SK
 	 static public final void main(String[] args){
-		Dus i = new Dus();
+		Iets i = new Dus();
 		i.anders();
 		System.out.println(i.a);
 		i = new Nope();
