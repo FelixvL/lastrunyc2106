@@ -1,25 +1,25 @@
-class Demo{   // RJ
+class Demo{   // SA
 	 static public final void main(String[] args){
-		System.out.println("start");
-		W w = new W();
-		w.lopen().huppakee(5);
-		System.out.println("eind");
-	}
-}
-class W{
-	D lopen(){
-		return new D();
+		Iets i = new Nope();
+		i.anders();
+		System.out.println("bye");
 	}
 }
 
-class H extends W{
-	void huppakee(int a){
-		System.out.println("lopen in Z");
+abstract class Iets{
+	void anders(){
+		System.out.println("anders");
+	}
+	
+}
+
+class Dus extends Iets{
+	void anders(){
+		System.out.println("dus anders");
+		return;
 	}
 }
 
-class D extends H{
-	void lopen(int w){
-		System.out.println("lopen in ZR");
-	}
+class Nope extends Iets{
+
 }
