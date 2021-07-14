@@ -1,7 +1,7 @@
-class Demo{   // TC
+class Demo{   // TE
 	 static public final void main(String[] args){
 		P p = new S();
-		B b = new P();
+		B b = new B();
 		b = p;
 		B bb = new B();
 		P pp = new P();
