@@ -1,24 +1,28 @@
-class Demo{   // TA
+class Demo{   // TC
 	 static public final void main(String[] args){
-		I i = new I();
-		R r = (R)i;
-		System.out.println("go");
+		P p = new S();
+		B b = new P();
+		b = p;
+		B bb = new B();
+		P pp = new P();
+		pp = bb;
+		System.out.println("Einde");
 	}
 }
-class I{
+class P{
 
 }
 
-class J{
-
-
-}
-
-class R extends I{
+class T{
 
 
 }
 
-class Z extends R{
+class B extends P{
+
+
+}
+
+class S extends B{
 
 }
