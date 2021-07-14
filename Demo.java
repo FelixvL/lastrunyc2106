@@ -1,10 +1,10 @@
-class Demo{   // RU
+class Demo{   // RW
 	 static public final void main(String[] args){
 		System.out.println("start");
-		H h = new D();
+		H h = new H();
 		D d = new D();
 		h = d;
-		d.lopen();
+		h.lopen();
 		System.out.println("eind");
 	}
 }
