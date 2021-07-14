@@ -1,8 +1,8 @@
-class Demo{   // TE
+class Demo{   // TG
 	 static public final void main(String[] args){
 		P p = new S();
 		B b = new B();
-		b = p;
+		b = (S)p;
 		B bb = new B();
 		P pp = new P();
 		pp = bb;
