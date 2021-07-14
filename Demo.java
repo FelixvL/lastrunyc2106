@@ -1,9 +1,7 @@
-class Demo{   // RG
+class Demo{   // RI
 	 static public final void main(String[] args){
 		System.out.println("start");
 		W w = new W();
-		H h = new D();
-		h.lopen(5);
 		w.lopen().lopen(5);
 		System.out.println("eind");
 	}
