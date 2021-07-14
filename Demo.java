@@ -1,4 +1,4 @@
-class Demo{   // SC
+class Demo{   // SE
 	 static public final void main(String[] args){
 		Iets i = new Nope();
 		i.anders();
@@ -12,7 +12,7 @@ abstract class Iets{
 	void anders(){
 		System.out.println("anders");
 	}
-	void worden();
+	abstract void worden();
 	
 }
 
