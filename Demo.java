@@ -1,4 +1,4 @@
-class Demo{   // RE
+class Demo{   // RF
 	 static public final void main(String[] args){
 		System.out.println("start");
 		W w = new W();
@@ -19,7 +19,7 @@ class H extends W{
 }
 
 class D extends H{
-	void lopen(){
+	void lopen(int w){
 		System.out.println("lopen in ZR");
 	}
 }
