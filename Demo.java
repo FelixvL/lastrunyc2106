@@ -1,36 +1,34 @@
-class Demo{   // SG
+class Demo{   // SI
 	 static public final void main(String[] args){
-		Iets i = new Dus();
+		Dus i = new Dus();
 		i.anders();
-		i.worden();
+		System.out.println(i.a);
+		i = new Nope();
+		i.anders();
 		System.out.println(i.a);
 		System.out.println("bye");
 	}
 }
-
 abstract class Iets{
 	int a = 3;
 	void anders(){
-		System.out.println("anders");
+		System.out.println("anders"+a);
 	}
-	abstract void worden();
-	
+	abstract void worden();	
 }
-
 class Dus extends Iets{
 	int a = 4;
 	void anders(){
-		System.out.println("dus anders");
+		System.out.println("dus anders"+a);
 		return;
 	}
 	void worden(){
-		System.out.println("Dus worden");
+		System.out.println("Dus worden"+a);
 	}
 }
-
 class Nope extends Iets{
 	int a = 5;
 	void worden(){
-		System.out.println("Nope worden");
+		System.out.println("Nope worden"+a);
 	}
 }
