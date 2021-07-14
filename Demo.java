@@ -1,5 +1,5 @@
-class Demo{   // RT
-	final static void main(String[] args){
+class Demo{   // RS
+	final static public void main(String[] args){
 		System.out.println("start");
 		Hond d = new Dier();
 		System.out.println("eind");
