@@ -1,8 +1,8 @@
-class Demo{   // RI
+class Demo{   // RJ
 	 static public final void main(String[] args){
 		System.out.println("start");
 		W w = new W();
-		w.lopen().lopen(5);
+		w.lopen().huppakee(5);
 		System.out.println("eind");
 	}
 }
