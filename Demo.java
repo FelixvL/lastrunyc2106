@@ -1,34 +1,24 @@
-class Demo{   // SK
+class Demo{   // TA
 	 static public final void main(String[] args){
-		Iets i = new Dus();
-		i.anders();
-		System.out.println(i.a);
-		i = new Nope();
-		i.anders();
-		System.out.println(i.a);
-		System.out.println("bye");
+		I i = new I();
+		R r = (R)i;
+		System.out.println("go");
 	}
 }
-abstract class Iets{
-	int a = 3;
-	void anders(){
-		System.out.println("anders"+a);
-	}
-	abstract void worden();	
+class I{
+
 }
-class Dus extends Iets{
-	int a = 4;
-	void anders(){
-		System.out.println("dus anders"+a);
-		return;
-	}
-	void worden(){
-		System.out.println("Dus worden"+a);
-	}
+
+class J{
+
+
 }
-class Nope extends Iets{
-	int a = 5;
-	void worden(){
-		System.out.println("Nope worden"+a);
-	}
+
+class R extends I{
+
+
+}
+
+class Z extends R{
+
 }
