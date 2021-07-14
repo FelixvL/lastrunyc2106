@@ -1,4 +1,4 @@
-class Demo{   // RZ
+class Demo{   // RC
 	 static public final void main(String[] args){
 		System.out.println("start");
 		H h = new H();
@@ -8,9 +8,13 @@ class Demo{   // RZ
 		System.out.println("eind");
 	}
 }
+class W{
+	void lopen(){
+		System.out.println("lopen in W");
+	}
+}
 
-
-class H{
+class H extends W{
 	void lopen(int a){
 		System.out.println("lopen in Z");
 	}
