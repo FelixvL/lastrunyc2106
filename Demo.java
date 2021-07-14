@@ -1,7 +1,8 @@
-class Demo{   // SE
+class Demo{   // SG
 	 static public final void main(String[] args){
-		Iets i = new Nope();
+		Iets i = new Dus();
 		i.anders();
+		i.worden();
 		System.out.println(i.a);
 		System.out.println("bye");
 	}
