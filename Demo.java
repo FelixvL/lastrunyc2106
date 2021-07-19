@@ -1,14 +1,13 @@
-class Demo{   // DE
+class Demo{   // DF
 	 static public final void main(String[] args){
 		System.out.println("start");
-		HHH h = new QQQ();
-		OOO o = (OOO)h;
-		o.proberen();
+		JJJ j = new HHH();
+		j.jjj();
 	}
 }
 
 
-abstract class HHH{
+abstract class HHH implements JJJ{
 	abstract void proberen();
 }
 
@@ -20,5 +19,10 @@ class OOO extends HHH{
 class QQQ extends HHH{
 	void proberen(){
 		System.out.println("gaat ook fout");
+	}
+}
+interface JJJ{
+	static void jjj(){
+		System.out.println("Dit gaat goed");
 	}
 }
