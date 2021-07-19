@@ -1,7 +1,7 @@
-class Demo{   // DG
+class Demo{   // DH
 	 static public final void main(String[] args){
 		System.out.println("start");
-		JJJ j = new OOO();
+		JJJ j = new QQQ();
 		j.jjj();
 	}
 }
@@ -22,7 +22,7 @@ class QQQ extends HHH{
 	}
 }
 interface JJJ{
-	static void jjj(){
+	default void jjj(){
 		System.out.println("Dit gaat goed");
 	}
 }
