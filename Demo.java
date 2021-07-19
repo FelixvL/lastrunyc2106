@@ -1,8 +1,8 @@
-class Demo{   // CF
+class Demo{   // CH
 	 static public final void main(String[] args){
 		System.out.println("start");
 		Repairable r = new Car();
-		Vehicle v = (Car) r;
+		Vehicle v = (Vehicle) r;
 		v.repair();
 		System.out.println("end");
 
