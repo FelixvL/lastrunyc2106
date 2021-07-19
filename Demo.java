@@ -1,7 +1,8 @@
-class Demo{   // CO
+class Demo{   // CP
 	 static public final void main(String[] args){
+		System.out.println("start");
 		Voortbewegen v = new Shetlander();
-		v = new Hond();
+		Hond h = (Hond)v;
 	}
 }
 abstract class Dier implements Voortbewegen{
