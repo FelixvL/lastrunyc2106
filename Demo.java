@@ -1,28 +1,20 @@
-class Demo{   // TG
+class Demo{   // ZW
 	 static public final void main(String[] args){
-		P p = new S();
-		B b = new B();
-		b = (S)p;
-		B bb = new B();
-		P pp = new P();
-		pp = bb;
-		System.out.println("Einde");
+		System.out.println("start");
+		FFproberen ff = new Goedproberen();
+		ff.wandelen();
+		System.out.println("einde");
 	}
 }
-class P{
 
+class FFproberen{
+	void wandelen(){
+		System.out.println("a");
+	}
 }
 
-class T{
-
-
-}
-
-class B extends P{
-
-
-}
-
-class S extends B{
-
+class Goedproberen extends FFproberen{
+	void wandelen() throws Exception{
+		System.out.println("b");
+	}
 }
