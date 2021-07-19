@@ -1,7 +1,8 @@
-class Demo{   // ZF
+class Demo{   // ZG
 	 static public final void main(String[] args){
 		System.out.println("start");
 		FFproberen ff = new Goedproberen();
+		ff.wandelen();
 		ff.go().wandelen();
 		System.out.println("einde");
 	}
@@ -12,7 +13,7 @@ class FFproberen{
 		System.out.println("a");
 	}
 	FFproberen go(){   
-		return new FFproberen();  
+		return new Goedproberen();  
 	}
 }
 
