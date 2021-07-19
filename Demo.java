@@ -1,24 +1,27 @@
-class Demo{   // ZG
+class Demo{   // CA
 	 static public final void main(String[] args){
 		System.out.println("start");
-		FFproberen ff = new Goedproberen();
-		ff.wandelen();
-		ff.go().wandelen();
-		System.out.println("einde");
+		Repairable r = new Car();
+		Vehicle v = (Repairable) r;
+		v.repair();
+		System.out.println("end");
+
 	}
 }
 
-class FFproberen{   
-	void wandelen(){
-		System.out.println("a");
+
+
+class Car extends Vehicle{
+	public void repair(){
+		System.out.println("repair in Car");
 	}
-	FFproberen go(){   
-		return new Goedproberen();  
+}
+class Vehicle{
+	public void repair(){
+		System.out.println("repair in Vehicle");
 	}
 }
 
-class Goedproberen extends FFproberen{   
-	void wandelen(){
-		System.out.println("b");
-	}
+interface Repairable{
+	void repair();
 }
