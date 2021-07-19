@@ -1,4 +1,4 @@
-class Demo{   // CL
+class Demo{   // CM
 	 static public final void main(String[] args){
 		Dier dier = new Shetlander();
 		System.out.println(dier.snelheid());
@@ -6,8 +6,7 @@ class Demo{   // CL
 		System.out.println(dier1.snelheid());
 	}
 }
-class Dier implements Voortbewegen{
-
+abstract class Dier implements Voortbewegen{
 }
 class Paard extends Dier{
 	int snelheid(){
