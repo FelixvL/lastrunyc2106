@@ -1,5 +1,5 @@
-class Demo{   // ZY
-	 static public final void main(String[] args){
+class Demo{   // ZZ
+	 static public final void main(String[] args) throws Exception{
 		System.out.println("start");
 		FFproberen ff = new Goedproberen();
 		ff.wandelen();
