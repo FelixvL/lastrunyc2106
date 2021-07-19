@@ -1,4 +1,4 @@
-class Demo{   // CA
+class Demo{   // CC
 	 static public final void main(String[] args){
 		System.out.println("start");
 		Repairable r = new Car();
@@ -11,12 +11,12 @@ class Demo{   // CA
 
 
 
-class Car extends Vehicle{
+class Car extends Vehicle {
 	public void repair(){
 		System.out.println("repair in Car");
 	}
 }
-class Vehicle{
+class Vehicle implements Repairable{
 	public void repair(){
 		System.out.println("repair in Vehicle");
 	}
