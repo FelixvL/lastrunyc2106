@@ -1,8 +1,8 @@
-class Demo{   // CL
+class Demo{   // CR
 	 static public final void main(String[] args){
 		System.out.println("start");
 		Paard p = new Shetlander();
-		Shetlander s = p;
+		Shetlander s = (Shetlander)(Paard)p;
 
 		
 	}
