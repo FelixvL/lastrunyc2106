@@ -1,4 +1,4 @@
-class Demo{   // ZB
+class Demo{   // ZD
 	 static public final void main(String[] args){
 		System.out.println("start");
 		FFproberen ff = new Goedproberen();
@@ -7,16 +7,16 @@ class Demo{   // ZB
 	}
 }
 
-class FFproberen{
+class FFproberen{   
 	void wandelen(){
 		System.out.println("a");
 	}
-	Goedproberen go(){
-		return new FFproberen();
+	Goedproberen go(){   
+		return (Goedproberen) new FFproberen();  
 	}
 }
 
-class Goedproberen extends FFproberen{
+class Goedproberen extends FFproberen{   
 	void wandelen(){
 		System.out.println("b");
 	}
