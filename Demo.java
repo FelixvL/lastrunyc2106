@@ -1,13 +1,15 @@
-class Demo{   // CP
+class Demo{   // CL
 	 static public final void main(String[] args){
 		System.out.println("start");
-		Voortbewegen v = new Shetlander();
-		Hond h = (Hond)v;
+		Paard p = new Shetlander();
+		Shetlander s = p;
+
+		
 	}
 }
-abstract class Dier implements Voortbewegen{
+abstract class Dier{
 }
-class Paard extends Dier{
+class Paard extends Dier implements Voortbewegen{
 	public int snelheid(){
 		System.out.println("snelheid in paard");
 		return 7;
