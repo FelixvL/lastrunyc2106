@@ -1,7 +1,7 @@
-class Demo{   // CI
+class Demo{   // CJ
 	 static public final void main(String[] args){
 		System.out.println("start");
-		Repairable r = new Vehicle();
+		Repairable r = new Car();
 		Vehicle v = (Car) r;
 		v.repair();
 		System.out.println("end");
@@ -11,19 +11,17 @@ class Demo{   // CI
 
 
 
-class Car extends Vehicle {    // Paard
-	public void repair(){
+class Car extends Vehicle {    
+	public void repair(int a){
 		System.out.println("repair in Car");
 	}
 }
-class Vehicle implements Repairable{   // Dier
+class Vehicle implements Repairable{   
 	public void repair(){
 		System.out.println("repair in Vehicle");
 	}
 }
 
-interface Repairable{      // Categoriseerbaar
-	void repair();
+interface Repairable{      
 }
 
-// Pokemonkaarten      // Categoriseerbaar
