@@ -1,7 +1,7 @@
-class Demo{   // DF
+class Demo{   // DG
 	 static public final void main(String[] args){
 		System.out.println("start");
-		JJJ j = new HHH();
+		JJJ j = new OOO();
 		j.jjj();
 	}
 }
