@@ -1,32 +1,18 @@
-class Demo{   // CU
+class Demo{   // DA
 	 static public final void main(String[] args){
 		System.out.println("start");
-		Dier d = new Paard();
-		Voortbewegen v = (Paard)d;
+		HHH h = new OOO();
+		h.proberen();
+	}
+}
 
-		
+
+abstract class HHH{
+	void proberen(){
+		System.out.println("proberen in HHH");
 	}
 }
-abstract class Dier{
-}
-class Paard extends Dier implements Voortbewegen{
-	public int snelheid(){
-		System.out.println("snelheid in paard");
-		return 7;
-	}
-}
-class Shetlander extends Paard{
-	public int snelheid(){
-		System.out.println("snelheid in shetland");
-		return 5;
-	}
-}
-class Hond extends Dier{
-	public int snelheid(){
-		System.out.println("snelheid in hond");
-		return 3;
-	}
-}
-interface Voortbewegen{
-	int snelheid();
+
+class OOO extends HHH{
+
 }
