@@ -1,8 +1,8 @@
-class Demo{   // CT
+class Demo{   // CU
 	 static public final void main(String[] args){
 		System.out.println("start");
 		Dier d = new Paard();
-		Voortbewegen v = d;
+		Voortbewegen v = (Paard)d;
 
 		
 	}
