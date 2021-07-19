@@ -1,32 +1,25 @@
-class Demo{   // DI
+class Demo{   // DJ
 	 static public final void main(String[] args){
 		System.out.println("start");
-		JJJ j = new QQQ();
-		HHH h = (HHH)j;
-		h.jjj();
+		RRR rrr = new RRR();
+		AAA a = rrr.gaan(new FFF());
+		System.out.println("einde");
+
 	}
 }
 
+class RRR{
+	DDD gaan(AAA a){
+		return new FFF();
+	}
+}
 
-abstract class HHH implements JJJ{
-	abstract void proberen();
-}
+class DDD implements AAA{
 
-class OOO extends HHH{
-	protected void proberen(){
-		System.out.println("dit gaat fout");
-	}
 }
-class QQQ extends HHH{
-	void proberen(){
-		System.out.println("gaat ook fout");
-	}
-	void jjj(){
-		System.out.println("Dit gaat mwa");
-	}
+class FFF extends DDD{
+
 }
-interface JJJ{
-	default void jjj(){
-		System.out.println("Dit gaat goed");
-	}
+interface AAA{
+
 }
