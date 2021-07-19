@@ -1,27 +1,32 @@
-class Demo{   // CK
+class Demo{   // CL
 	 static public final void main(String[] args){
-		System.out.println("start");
-		Repairable r = new Car();
-		Vehicle v = (Car) r;
-		v.repair();
-		System.out.println("end");
-
+		Dier dier = new Shetlander();
+		System.out.println(dier.snelheid());
+		Dier dier1 = new Hond();
+		System.out.println(dier1.snelheid());
 	}
 }
+class Dier implements Voortbewegen{
 
-
-
-class Car extends Vehicle {    
-	public void repair(){
-		System.out.println("repair in Car");
+}
+class Paard extends Dier{
+	int snelheid(){
+		System.out.println("snelheid in paard");
+		return 7;
 	}
 }
-class Vehicle implements Repairable{   
-	public void repair(int a){
-		System.out.println("repair in Vehicle");
+class Shetlander extends Paard{
+	int snelheid(){
+		System.out.println("snelheid in shetland");
+		return 5;
 	}
 }
-
-interface Repairable{      
+class Hond extends Dier{
+	int snelheid(){
+		System.out.println("snelheid in hond");
+		return 3;
+	}
 }
-
+interface Voortbewegen{
+	int snelheid();
+}
