@@ -1,4 +1,4 @@
-class Demo{   // ZD
+class Demo{   // ZF
 	 static public final void main(String[] args){
 		System.out.println("start");
 		FFproberen ff = new Goedproberen();
@@ -11,8 +11,8 @@ class FFproberen{
 	void wandelen(){
 		System.out.println("a");
 	}
-	Goedproberen go(){   
-		return (Goedproberen) new FFproberen();  
+	FFproberen go(){   
+		return new FFproberen();  
 	}
 }
 
