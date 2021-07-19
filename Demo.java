@@ -1,8 +1,9 @@
-class Demo{   // DD
+class Demo{   // DE
 	 static public final void main(String[] args){
 		System.out.println("start");
 		HHH h = new QQQ();
-		h.proberen();
+		OOO o = (OOO)h;
+		o.proberen();
 	}
 }
 
