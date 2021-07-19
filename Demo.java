@@ -1,8 +1,8 @@
-class Demo{   // CH
+class Demo{   // CI
 	 static public final void main(String[] args){
 		System.out.println("start");
-		Repairable r = new Car();
-		Vehicle v = (Vehicle) r;
+		Repairable r = new Vehicle();
+		Vehicle v = (Car) r;
 		v.repair();
 		System.out.println("end");
 
